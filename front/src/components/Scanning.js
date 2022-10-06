@@ -5,7 +5,7 @@ import "../App.css";
 const Scanning = ({setStatus, url}) => {
   let checkStatus = () => {
     // console.log(`http://localhost:8080?url=${url}`);
-    axios.get(`https://grid-jsclub.herokuapp.com?url=${url}`)
+    axios.get(`http://localhost:3000 ?url=${url}`)
       .then(({ data }) => {
         console.log(data);
         if (data === "scan in progress") {

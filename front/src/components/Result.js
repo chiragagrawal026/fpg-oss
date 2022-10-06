@@ -13,7 +13,7 @@ const Result = ({ url }) => {
   useEffect(() => {
     axios
       // .get(`http://localhost:8080?url=${url}`)
-      .get(`https://grid-jsclub.herokuapp.com?url=${url}`)
+      .get(`http://localhost:3000 ?url=${url}`)
       .then(({ data: dt }) => {
         console.log(dt.data.codeQLData);
         if (dt.data.codeQLData)
