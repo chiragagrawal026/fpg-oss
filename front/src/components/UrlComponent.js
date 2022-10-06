@@ -19,7 +19,7 @@ const UrlComponent = ({setStatus}) => {
 
   let onSubmit = (event) => {
     event.preventDefault();
-    axios.post("http://localhost:8080/scan", {
+    axios.post("https://grid-jsclub.herokuapp.com/scan", {
         url,
         type: selectedOption,
       })
